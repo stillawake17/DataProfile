@@ -48,3 +48,38 @@ footer {
     text-align: center;
     padding: 1rem 0;
 }
+
+
+
+form {
+    max-width: 400px;
+    margin: 0 auto; /* center the form */
+}
+
+form label,
+form input,
+form textarea,
+form button {
+    display: block; /* stack elements vertically */
+    width: 100%; 
+    margin-bottom: 1rem; /* space between elements */
+}
+
+form input,
+form textarea,
+form button {
+    padding: 0.5rem;
+    border: 1px solid #48A9A6; /* 70s teal for border */
+    border-radius: 5px; /* rounded corners */
+}
+
+form button {
+    background-color: #FF6B6B; /* 70s red for button */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #D7263D; /* Darker red on hover */
+}
