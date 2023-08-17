@@ -13,15 +13,51 @@ h1, h2, h3, h4, h5, h6 {
 header {
     background-color: #005D6E; /* Rich blue teal */
     color: white;
+    display: flex;
+    justify-content: space-between; /* This separates the title from the nav */
+    align-items: center; /* Vertically centers items in the header */
+    padding: 10px 5%; /* Some padding to the header for better visual spacing */
 }
 
 nav a {
     color: #FFC857; /* Complementary gold for contrast */
+    text-decoration: none; /* Remove underlines from links */
+    transition: color 0.3s; /* Smooth color transition on hover */
 }
 
 nav a:hover {
     color: #F6F6F6; /* Light cream on hover */
 }
+
+nav a.active {
+    /*text-transform: uppercase; /* Converts the text to uppercase */
+    color: #f5f3ef; /* Change the color if you want to give more emphasis to the active item */
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    padding: 0;
+    list-style-type: none; /* Remove bullet points */
+    display: flex;         /* Use flexbox for horizontal alignment */
+    /*justify-content: center; /* Center the list items horizontally */
+
+    
+}
+
+nav li {
+    margin: 0 15px; /* Space between list items */
+}
+
+nav a {
+    text-decoration: none; /* Remove underlines from links */
+    transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+
+
 
 section {
     background-color: #F6F6F6; /* Light cream for sections */
