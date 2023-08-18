@@ -1,3 +1,12 @@
+* {
+    box-sizing: border-box;
+}
+
+
+html {
+    overflow-y: scroll; /* This forces the vertical scrollbar to always be present */
+}
+
 /* Fonts */
 body {
     font-family: 'Roboto', sans-serif;
@@ -8,6 +17,22 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif;
 }
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-display: swap;
+}
+
 
 /* Colors */
 header {
@@ -64,20 +89,46 @@ section {
     color: #333333; /* Dark gray text */
 }
 
+/* Form styling */
+
+/* ... (previous styles) ... */
+
+form {
+    max-width: 400px;
+    margin: 0 auto; /* center the form */
+}
+
+form label,
 form input,
 form textarea,
 form button {
+    display: block; /* stack elements vertically */
+    width: 100%; 
+    margin-bottom: 1rem; /* space between elements */
+}
+
+form input,
+form textarea {
+    padding: 0.5rem;
     border: 1px solid #005D6E; /* Border with rich blue teal */
+    border-radius: 5px; /* rounded corners */
+    background-color: #F6F6F6; /* Light cream for input backgrounds */
 }
 
 form button {
+    padding: 0.5rem 1rem; /* Add some horizontal padding to the button */
     background-color: #005D6E; /* Button with rich blue teal */
     color: #F6F6F6; /* Light cream text */
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 form button:hover {
     background-color: #003D4C; /* Darker shade of blue teal on hover */
 }
+
+/* ... Footer styling ... */
+
 
 footer {
     background-color: #333333; /* Dark gray footer */
